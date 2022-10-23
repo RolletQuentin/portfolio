@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+{% load template %}
+
+{% block content %}
+<h1>Portfolio</h1>
+
+{% for k in list %}
+    <div>
+        <h2>{{ type_of_projects|index:forloop.counter0 }}</h2>
+        {% for project in projects|index:forloop.counter0 %}
+            <div class="project">
+                <a href="{% url 'projet' project.id %}">
+                    <img src="{% static 'main/images/'|add:project.image_name %}" alt="project image">
+                    <div>
+                        <div>
+                            <h3>{{ project.name }}</h3>
+                            <p class="date">{{ project.date|date:"d/m/y" }}</p>
+                        </div>
+                        <p class="short_description">{{ project.short_description }}</p>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+
+{% endblock content %}

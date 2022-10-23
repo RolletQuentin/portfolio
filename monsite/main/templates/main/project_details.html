@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<h1>{{ project.name }}</h1>
+<p class="date">{{ project.date|date:"d/m/y" }}</p>
+<div>
+    {% autoescape off %}
+        {{ project.description }}
+    {% endautoescape %}
+</div>
+<div class="buttons">
+    {% if project.link %}
+        {% if project.type_of_projects == "Web" %}
+            <a href="{{ project.link }}" class="button">Visiter</a>
+        {% else %}
+            <a href="{{ project.link }}" class="button">GitHub</a>
+        {% endif %}
+    {% endif %}
+
+    <a href="{% url 'portfolio' %}" class="button">Retour</a>
+</div>    
+{% endblock content %}

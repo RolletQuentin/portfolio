@@ -1,0 +1,280 @@
+* {
+  --font-color: black;
+  --main-bg-color: #10657e;
+}
+
+/* --- DEBUT Reset CSS --- */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: var(--font-color)
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+/* --- FIN Reset CSS --- */
+
+/* --- DEBUT Header --- */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: var(--main-bg-color);
+}
+
+header h1 {
+  color: white;
+  font-size: 2em;
+  margin-top: 0px;
+}
+
+/* --- FIN Header --- */
+
+/* --- DEBUT Footer --- */
+footer {
+  position: relative;
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  border-top: 1px grey solid;
+}
+
+footer ul {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+footer li {
+  list-style-position: inside;
+  padding: 1px;
+}
+
+footer a,
+footer a:hover,
+footer a:visited {
+  text-decoration: none;
+}
+
+#GitHub {
+  list-style-image: url("icons/github.svg");
+  list-style-type: circle;
+}
+
+#GitHub:hover {
+  filter: invert(31%) sepia(49%) saturate(837%) hue-rotate(147deg) brightness(92%) contrast(90%);
+  transition: 0.2s ease;
+}
+
+#LinkedIn {
+  list-style-image: url("icons/linkedin.svg");
+}
+
+#LinkedIn:hover {
+  filter: invert(31%) sepia(49%) saturate(837%) hue-rotate(147deg) brightness(92%) contrast(90%);
+  transition: 0.2s ease;
+}
+
+/* --- FIN Footer --- */
+
+/* --- DEBUT Main --- */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  text-align: justify;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+}
+
+h1 {
+  margin: 20px 10px 20px 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h2 {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 1.75em;
+}
+
+h3 {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 1.50em;
+}
+
+p {
+  padding: 10px;
+}
+
+ul {
+  padding: 10px;
+}
+
+li {
+  padding: 2px 0px 2px 0px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.button,
+.button:visited {
+  display: block;
+  background-color: #093644;
+  color: white;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.button:hover {
+  color: white;
+  transform: scale(110%);
+  transition: 0.2s;
+}
+
+/* --- FIN Main --- */
+
+/* --- DEBUT Portfolio --- */
+.project img {
+  width: 128px;
+  height: 128px;
+}
+
+.project a {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.project a>div {
+  margin-left: 10px;
+}
+
+.project {
+  border-bottom: solid 1px black;
+}
+
+.project:last-of-type {
+  border-bottom: 0px;
+}
+
+.project:hover {
+  background-color: gainsboro;
+  transition: 0.2s;
+}
+
+.project h3 {
+  margin-bottom: 2px;
+}
+
+.date {
+  padding: 0px;
+  padding-left: 10px;
+  font-size: 0.9em;
+  color: grey;
+}
+
+/* --- FIN Portfolio --- */
+
+/* --- DEBUT project_detail --- */
+.buttons {
+  display: flex;
+}
+
+.buttons .button {
+  background-color: var(--main-bg-color);
+  width: 75px;
+  text-align: center;
+}
+
+/* --- FIN project_detail --- */

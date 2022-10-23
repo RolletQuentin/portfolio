@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    {% comment %} Main style {% endcomment %}
+    <link rel="stylesheet" href="{% static 'main/styles.css' %}" />
+    {% comment %} CV styles {% endcomment %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/cv.css' %}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/cv_printer.css' %}" media="print">
+    <title>Quentin Rollet</title>
+</head>
+<body>
+
+    <header>
+        <h1>Quentin Rollet</h1>
+        <a href="{% static 'main/downloads/CV.pdf' %}" download="CV_Quentin_Rollet.pdf" class="button">Télécharger CV</a>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <div id="reseaux">
+            <ul>
+                <a href="https://github.com/RolletQuentin"><li id="GitHub"></li></a>
+                <a href="https://www.linkedin.com/in/quentin-rollet-4730a41b0"><li id="LinkedIn"></li></a>
+            </ul>
+        </div>
+    </footer>   
+</body>
+</html>

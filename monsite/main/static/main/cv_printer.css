@@ -1,0 +1,220 @@
+/* --- Variables --- */
+* {
+  --main-bg-color: #10657e;
+}
+
+/* --- DEBUT CSS classique --- */
+@page {
+  margin: 0%;
+}
+
+body {
+  height: 1122px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
+  font-size: 11pt;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+/* --- FIN CSS classique --- */
+
+
+/* --- DEBUT Classe --- */
+.column {
+  position: relative;
+  height: 100%;
+}
+
+.column:first-child {
+  width: 25%;
+  color: white;
+  background-color: var(--main-bg-color);
+}
+
+.column:nth-child(2) {
+  width: 75%;
+  color: black;
+  background-color: white;
+}
+
+.column:nth-child(2) h1 {
+  color: var(--main-bg-color);
+}
+
+.description {
+  /* border: 1px solid green; */
+  border-top: 1px black solid;
+  padding-top: 15px;
+  margin: auto;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.description .progress_bar {
+  width: 75%;
+  background-color: rgba(180, 180, 180, 0.3);
+}
+
+.description .progress_bar .foreground {
+  background-color: white;
+}
+
+.description .item {
+  padding: 10px 0px 20px 0px;
+}
+
+.description .item:first-of-type {
+  padding-top: 0px;
+}
+
+.parcours {
+  /* border: 1px solid greenyellow; */
+  border-top: 1px var(--main-bg-color) solid;
+  margin: 0px 30px 0px 0px;
+  padding: 10px 0px 25px 30px;
+}
+
+.parcours ul {
+  padding-left: 20px; 
+  list-style-position: inside;
+  list-style: disc;
+}
+
+.item {
+  padding: 10px 0px 0px 0px;
+}
+
+.item:first-of-type {
+  padding-top: 0px;
+}
+
+.black_font {
+  color: black;
+}
+
+/* Creation d'une progressbar */
+.progress_bar {
+  display: block;
+  position: absolute;
+  width: 35%;
+  height: 15px;
+  border-radius: 2px;
+  background-color: rgba(180, 180, 180, 0.8);
+}
+
+.progress_bar .foreground {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  background-color: var(--main-bg-color);
+  transform-origin: left center;
+  animation-name: progress_bar_anim;
+  animation-duration: 1s;
+}
+
+.progress_bar>p {
+  font-size: 10pt;
+  text-align: right;
+}
+
+/* --- FIN Classe --- */
+
+
+/* --- DEBUT Id --- */
+#main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#logo_cv {
+  display: block;
+  width: 196px;
+  height: 196px;
+  background-color: blue;
+  text-align: center;
+
+}
+
+#title {
+  margin: 20px 30px 0px 0px;
+  padding: 10px 0px 20px 30px;
+}
+
+#title h1 {
+  font-size: 20pt;
+  text-transform: none;
+}
+
+#title h2 {
+  font-size: 1.20em;
+  color: rgb(102, 102, 102);
+  text-transform: uppercase;
+}
+
+#personnal_data {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 20px 30px;
+}
+
+#personnal_data li {
+  list-style-position: inside;
+  padding: 1px 0px 1px 0px;
+}
+
+#phone {
+  list-style-image: url("../icons/phone.svg");
+}
+
+#mail {
+  list-style-image: url("../icons/mail.svg");
+}
+
+#adress {
+  list-style-image: url("../icons/home.svg");
+}
+
+#car {
+  list-style-image: url("../icons/car.svg");
+}
+
+#langage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#langage .item {
+  padding: 10px 0px 30px 0px;
+}
+
+/* --- FIN Id --- */
+
+/* --- DEBUT Animation ---  */
+@keyframes progress_bar_anim {
+  from {transform: scaleX(0)} to {transform: scaleX(attr(value))}
+}
+/* --- FIN Animation ---*/
+
+/* Elements a cacher */
+header {
+  display: none;
+}
+
+footer {
+  display: none;
+}

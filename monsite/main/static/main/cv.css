@@ -1,0 +1,64 @@
+/* --- Variables --- */
+* {
+  --main-bg-color: #10657e;
+}
+
+/* --- DEBUT CSS classique --- */
+
+/* --- FIN CSS classique --- */
+
+
+/* --- DEBUT Classe --- */
+.column {
+  height: 100%;
+}
+
+.column:first-child {
+  width: 25%;
+  color: white;
+  background-color: var(--main-bg-color);
+}
+
+.column:nth-child(2) {
+  width: 75%;
+  color: black;
+  background-color: white;
+}
+
+.column:nth-child(2) h1 {
+  color: var(--main-bg-color);
+}
+
+.description {
+  /* border: 1px solid green; */
+  border-top: 1px black solid;
+  padding-top: 15px;
+  margin: 30px ;
+}
+
+.parcours {
+  /* border: 1px solid greenyellow; */
+  border-top: 1px var(--main-bg-color) solid;
+  margin: 0px 30px 0px 0px;
+  padding: 10px 0px 30px 30px;
+  
+}
+/* --- FIN Classe --- */
+
+
+/* --- DEBUT Id --- */
+#main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#logo_cv {
+  display: block;
+  width: 196px;
+  height: 196px;
+  background-color: blue;
+  text-align: center;
+
+}
+/* --- FIN Id --- */

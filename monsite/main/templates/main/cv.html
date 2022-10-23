@@ -1,0 +1,199 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+<div id="main">
+    <div class="column">
+        <div id="logo_cv"></div>
+        <div class="description">
+            <h1>Profil professionnel</h1>
+            <p>Etudiant dans l'école CY-Tech dans le but de devenir ingénieur informaticien, je suis motivé, souriant, enthousiaste et prêt à faire tous les efforts possibles afin de mener à bien mes missions.</p>
+        </div>
+        <div class="description">
+            <h1>Compétences</h1>
+            <ul>
+                <li>Pédagogie</li>
+                <li>Esprit d'équipe</li>
+                <li>Autonome</li>
+                <li>Sociable</li>
+                <li>Capacité d'adaptation</li>
+                <li><br></li>
+                <li>Git</li>
+                <li>LaTeX</li>
+                <li>Unix</li>
+            </ul>
+        </div>
+        <div class="description">
+            <h1>Langues</h1>
+
+            <div class="item">
+                <p>Français</p>
+                <div class="progress_bar">
+                    <div class="foreground" style="transform: scaleX(1);"></div>
+                    <p>C2</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <p>Anglais</p>
+                <div class="progress_bar">
+                    <div class="foreground" style="transform: scaleX(0.7);"></div>
+                    <p>B2</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <p>Espagnol</p>
+                <div class="progress_bar">
+                    <div class="foreground" style="transform: scaleX(0.4);"></div>
+                    <p>A2</p>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h1>Centres d'intérêt</h1>
+            <ul>
+                <li>Course à pied</li>
+                <li>Vélo</li>
+                <li>Arts martiaux</li>
+                <li>Anime / Manga</li>
+            </ul>
+        </div>
+    </div>
+    <div class="column">
+        <div id="title">
+            <h1>Quentin<br><span class="black_font">Rollet</span></h1>
+            <h2>Recherche de stage du 15 juin 2022 au 10 août 2022</h2>
+        </div>
+        <div id="personnal_data">
+            <ul>
+                <li id="phone">0781661664</li>
+                <li id="mail">quentin.rollet@cy-tech.fr</li>
+                <li id="adress">9 avenue Pierre Massé, 64000 Pau</li>
+                <li id="car">Permis B - Véhiculé</li>
+            </ul>
+        </div>
+        <div class="parcours">
+            <h1>Parcours professionnel</h1>
+            <div class="item">
+                <p>09/2022 - Actuel</p>
+                <p><strong>Complétude</strong> | Pau</p>
+                <p>Professeur particulier</p>
+                <ul>
+                    <!-- <li>Etablissement d'un lien de confiance avec les élèves, favorisant leur réussite scolaire.</li> -->
+                    <li>Gestion d'un emploi du temps chargé, capacité à s'adapter à différents profils d'élèves.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <p>07/2020 - 08/2022 (périodes estivales)</p>
+                <p><strong>Solodi</strong> | Troyes | Intérim</p>
+                <p>Manutentionnaire</p>
+                <ul>
+                    <li>Acquisition d'une méthode de travail en équipe rapide et efficace.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="parcours">
+            <h1>Formation</h1>
+            <div class="item">
+                <p>09/2022 - En cours</p>
+                <p><strong>CY-Tech</strong> | Pau</p>
+                <p>Diplôme d'ingénieur en informatique</p>
+            </div>
+            <div class="item">
+                <p>09/2020 - 07/2022</p>
+                <p><strong>Lycée Henri Poincarré</strong> | Nancy</p>
+                <p>Cycle Préparatoire aux Grandes Ecoles, filière MP</p>
+            </div>
+            <div class="item">
+                <p>09/2019 - 06/2020</p>
+                <p><strong>Lycée Marie de Champagne</strong> | Troyes</p>
+                <p>Baccalauréat, Scientifique - Mention très bien</p>
+            </div>
+        </div>
+
+        <div class="parcours">
+            <h1>Projets</h1>
+            <!-- <div class="item">
+                <p><strong>Développement web</strong> | 10/2022</p>
+                <p>Développement d'un site internet personnel en HTML5/CSS3, avec le framework Django.</p>
+            </div> -->
+            <div class="item">
+                <p><strong>Développement web</strong> | 10/2022</p>
+                <p>Développement d'un site internet permettant la prise de rendez-vous en ligne ainsi que la mise à disposition de ressources afin d'améliorer mes compétences en tant que professeur particulier.</p>
+            </div>
+            <div class="item">
+                <p><strong>TIPE</strong> | 01/2021 - 03/2022</p>
+                <p>Projet Python : Modélisation et simulation de la propagation de particules dans un milieu dans le cadre de la détection de gazs dans l'atmosphère grâce à un dispositif LIDAR.</p>
+            </div>
+            <!-- <div class="item">
+                <p><strong>Market API</strong> | A venir</p>
+                <p>Projet JAVA : Développement d'une market API pour une association de l'école.</p>
+            </div> -->
+        </div>
+        
+        <div class="parcours">
+            <h1>Langages de programmation</h1>
+            <div id="langage">
+
+                <div class="item">
+                    <p>HTML5 / CSS3</p>
+                    <div class="progress_bar">
+                        <div class="foreground" style="transform: scaleX(0.8);"></div>
+                        <p>Avancé</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p>Javascript</p>
+                    <div class="progress_bar">
+                        <div class="foreground" style="transform: scaleX(0.2);"></div>
+                        <p>En apprentissage</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p>Python</p>
+                    <div class="progress_bar">
+                        <div class="foreground" style="transform: scaleX(0.8);"></div>
+                        <p>Avancé</p>
+                    </div>
+                </div>
+
+                <!-- <div class="item">
+                    <p>Django</p>
+                    <div class="progress_bar">
+                        <div class="foreground" style="transform: scaleX(0.4);"></div>
+                        <p>Débutant</p>
+                    </div>
+                </div> -->
+
+                <!-- <div class="item">
+                    <p>OCaml</p>
+                    <div class="progress_bar">
+                        <div class="foreground" style="transform: scaleX(0.6);"></div>
+                        <p>Intermédiaire</p>
+                    </div>
+                </div> -->
+
+                <!-- <div class="item">
+                    <p>Java</p>
+                    <div class="progress_bar">
+                        <div class="foreground" style="transform: scaleX(0.2);"></div>
+                        <p>En apprentissage</p>
+                    </div>
+                </div> -->
+
+                <div class="item">
+                    <p>C</p>
+                    <div class="progress_bar">
+                        <div class="foreground" style="transform: scaleX(0.2);"></div>
+                        <p>En apprentissage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
