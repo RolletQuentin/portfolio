@@ -1,1 +1,1 @@
-web:python3 monsite/manage.py runserver
+web: python monsite/manage.py runserver
