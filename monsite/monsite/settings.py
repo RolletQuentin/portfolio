@@ -27,7 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['https://quentin-rollet-portfolio.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://quentin-rollet-portfolio.herokuapp.com']
 
 
 # Application definition
