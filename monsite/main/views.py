@@ -1,5 +1,5 @@
 from atexit import register
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 from main.models import Project
@@ -50,3 +50,8 @@ def about(request):
 
 def contact(request):
     return render(request, "main/contact.html")
+
+
+def redirect_view(request):
+    response = redirect("/portfolio")
+    return response
